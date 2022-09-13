@@ -16,7 +16,7 @@ addEventListener('DOMContentLoaded', () => {
 let populares = [
     {
         product: "Floors SPC",
-        price: "21 K",
+        price: "21K",
         measureOne: "130em",
         measureTwo: "230em",
         score: 4.8,
@@ -25,7 +25,7 @@ let populares = [
     },
     {
         product: "Blinds PVC",
-        price: "12 K",
+        price: "12K",
         measureOne: "100cm",
         measureTwo: "150cm",
         score: 4.5,
@@ -34,7 +34,7 @@ let populares = [
     },
     {
         product: "Carpet Tile",
-        price: "23 K",
+        price: "10K",
         measureOne: "120cm",
         measureTwo: "240cm",
         score: 4.2,
