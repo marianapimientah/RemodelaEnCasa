@@ -48,12 +48,19 @@ const contenedor = document.querySelector('#container-cards');
 function crearCard(popular)
 {
     let card = `<div class="card">
-                    <button id="btn-score">${popular.score}<i class="fa-solid fa-star"></i></button>
-                    <img class="img-card" src="${popular.poster}" alt="${popular.product}">
-                    <h4>${popular.product} <span>${popular.price}</span></h4>
-                    <div class="meht">
-                        <button id="btn-left">${popular.measureOne}<button id="btn-right">${popular.measureTwo}</button><img class="img-cart" src="${popular.cart}"></button>    
-                    </div>              
+                    <div class="cont-sup">
+                        <button id="btn-special">${popular.score}<i class="fa-solid fa-star"></i></button>
+                        <img class="img-special" src="${popular.poster}" alt="${popular.product}">
+                    </div>
+                    <div class="cont-lr">
+                    <div class="left-card">
+                        <h4>${popular.product}</h4>
+                        <button class="meht">${popular.measureOne}<button class="meht">${popular.measureTwo}</button></button>   
+                    </div>
+                    <div class="right-card">
+                        <h5>${popular.price}</h5>
+                        <img class="cart-card" src="${popular.cart}">
+                    </div>             
                 </div>`;
     contenedor.innerHTML += card;
 };
@@ -65,3 +72,113 @@ function renderizarPopulares(){
     })};
     
 renderizarPopulares();
+/*---------------------------------CARDS SECTION FIVE----------------------------------------------*/
+let specialProducts = [
+    {
+        product: "Laminated Wood",
+        price: "12 K",
+        description: "Lorem ipsum dolor sit amet",
+        score: 4.8,
+        poster: "https://i.im.ge/2022/09/14/1TGlQW.Home6.jpg",
+        cart: "https://i.im.ge/2022/09/09/OHfvqa.Frame-5.png"
+    },
+    {
+        product: "Decks",
+        price: "12 K",
+        description: "Lorem ipsum dolor sit amet",
+        score: 4.5,
+        poster: "https://i.im.ge/2022/09/14/1TGFnc.Home7.jpg",
+        cart: "https://i.im.ge/2022/09/09/OHfvqa.Frame-5.png"
+    },
+    {
+        product: "Vinyl Roll",
+        price: "12 K",
+        description: "Lorem ipsum dolor sit amet",
+        score: 4.2,
+        poster: "https://i.im.ge/2022/09/14/1TGu3T.Home8.jpg",
+        cart: "https://i.im.ge/2022/09/09/OHfvqa.Frame-5.png"
+    },
+    {
+        product: "Curtains",
+        price: "12 K",
+        description: "Lorem ipsum dolor sit amet",
+        score: 4.8,
+        poster: "https://i.im.ge/2022/09/14/1TGoRr.Home9.jpg",
+        cart: "https://i.im.ge/2022/09/09/OHfvqa.Frame-5.png"
+    },
+    {
+        product: "Carpets",
+        price: "12 K",
+        description: "Lorem ipsum dolor sit amet",
+        score: 4.5,
+        poster: "https://i.im.ge/2022/09/14/1TGrL0.Home10.jpg",
+        cart: "https://i.im.ge/2022/09/09/OHfvqa.Frame-5.png"
+    },
+    {
+        product: "Wood Floors",
+        price: "12 K",
+        description: "Lorem ipsum dolor sit amet",
+        score: 4.2,
+        poster: "https://i.im.ge/2022/09/14/1TG1qL.Home11.jpg",
+        cart: "https://i.im.ge/2022/09/09/OHfvqa.Frame-5.png"
+    },
+]
+
+const contenedorSpecial = document.querySelector('#container-cards-special');
+
+function crearCardSpecial(special)
+{
+    let cardSpecial = `<div class="cardSpecial">
+                            <div class="cont-sup">
+                                <button id="btn-special">${special.score}<i class="fa-solid fa-star"></i></button>
+                                <img class="img-special" src="${special.poster}" alt="${special.product}">
+                            </div>
+                            <div class="cont-lr">
+                                <div class="left-card">
+                                    <h4>${special.product}</h4>
+                                    <p id="btn-left">${special.description}</p>    
+                                </div>
+                                <div class="right-card">
+                                    <h5>${special.price}</h5>
+                                    <img class="cart-card" src="${special.cart}">
+                                </div>             
+                            </div>
+                        </div>`;
+    contenedorSpecial.innerHTML += cardSpecial;
+};
+
+function renderizarSpecials(){
+    contenedorSpecial.innerHTML = '';
+    specialProducts.forEach(special => {
+        crearCardSpecial(special)
+    })};
+
+renderizarSpecials();
+
+/*---------------------------------SLIDER-PERSONS----------------------------------------------*/
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("sl-one");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
