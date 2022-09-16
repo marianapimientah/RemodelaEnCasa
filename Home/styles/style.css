@@ -641,7 +641,7 @@ body button{
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding-bottom: 80px;
+    padding-bottom: 110px;
 }
 .one{
     margin-left: 20px;
@@ -882,16 +882,16 @@ input::placeholder {
         display: none;
     }
     /*------------------------------------------FOOTER---------------------------------------------------*/
-        footer{
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            text-align: center;
-            justify-content: center;
-            padding-bottom: 30px;    
-        }
+    #footer-rc{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 30px;    
+    }
         .one{
             margin-left: 0px;
         }
@@ -1064,7 +1064,7 @@ input::placeholder {
         display: none;
     }
     /*------------------------------------------FOOTER---------------------------------------------------*/
-    footer{
+    #footer-rc{
         background-color: white;
         display: flex;
         flex-direction: column;
