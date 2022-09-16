@@ -21,7 +21,7 @@ let populares = [
         measureTwo: "230em",
         score: 4.8,
         poster: "https://i.im.ge/2022/09/09/OHCv34.Home2.jpg",
-        cart: "https://i.im.ge/2022/09/09/OHfvqa.Frame-5.png"
+        cart: "https://cdn.lordicon.com/aoggitwj.json"
     },
     {
         product: "Blinds PVC",
@@ -30,7 +30,7 @@ let populares = [
         measureTwo: "150cm",
         score: 4.5,
         poster: "https://i.im.ge/2022/09/09/OHEAaC.Home3.jpg",
-        cart: "https://i.im.ge/2022/09/09/OHfvqa.Frame-5.png"
+        cart: "https://cdn.lordicon.com/aoggitwj.json"
     },
     {
         product: "Carpet Tile",
@@ -39,7 +39,7 @@ let populares = [
         measureTwo: "240cm",
         score: 4.2,
         poster: "https://i.im.ge/2022/09/09/OHEYw1.Home4.jpg",
-        cart: "https://i.im.ge/2022/09/09/OHfvqa.Frame-5.png"
+        cart: "https://cdn.lordicon.com/aoggitwj.json"
     },
 ]
 
@@ -59,7 +59,12 @@ function crearCard(popular)
                     </div>
                     <div class="right-card">
                         <h5>${popular.price}</h5>
-                        <img class="cart-card" src="${popular.cart}">
+                        <lord-icon class="icon"
+                            src=${popular.cart}
+                            trigger="hover"
+                            colors="primary:#ff902b"
+                            style="width:32px;height:32px">
+                        </lord-icon>        
                     </div>             
                 </div>`;
     contenedor.innerHTML += card;
@@ -80,7 +85,7 @@ let specialProducts = [
         description: "Lorem ipsum dolor sit amet",
         score: 4.8,
         poster: "https://i.im.ge/2022/09/14/1TGlQW.Home6.jpg",
-        cart: "https://i.im.ge/2022/09/09/OHfvqa.Frame-5.png"
+        cart: "https://cdn.lordicon.com/aoggitwj.json"
     },
     {
         product: "Decks",
@@ -88,7 +93,7 @@ let specialProducts = [
         description: "Lorem ipsum dolor sit amet",
         score: 4.5,
         poster: "https://i.im.ge/2022/09/14/1TGFnc.Home7.jpg",
-        cart: "https://i.im.ge/2022/09/09/OHfvqa.Frame-5.png"
+        cart: "https://cdn.lordicon.com/aoggitwj.json"
     },
     {
         product: "Vinyl Roll",
@@ -96,7 +101,7 @@ let specialProducts = [
         description: "Lorem ipsum dolor sit amet",
         score: 4.2,
         poster: "https://i.im.ge/2022/09/14/1TGu3T.Home8.jpg",
-        cart: "https://i.im.ge/2022/09/09/OHfvqa.Frame-5.png"
+        cart: "https://cdn.lordicon.com/aoggitwj.json"
     },
     {
         product: "Curtains",
@@ -104,7 +109,7 @@ let specialProducts = [
         description: "Lorem ipsum dolor sit amet",
         score: 4.8,
         poster: "https://i.im.ge/2022/09/14/1TGoRr.Home9.jpg",
-        cart: "https://i.im.ge/2022/09/09/OHfvqa.Frame-5.png"
+        cart: "https://cdn.lordicon.com/aoggitwj.json"
     },
     {
         product: "Carpets",
@@ -112,7 +117,7 @@ let specialProducts = [
         description: "Lorem ipsum dolor sit amet",
         score: 4.5,
         poster: "https://i.im.ge/2022/09/14/1TGrL0.Home10.jpg",
-        cart: "https://i.im.ge/2022/09/09/OHfvqa.Frame-5.png"
+        cart: "https://cdn.lordicon.com/aoggitwj.json"
     },
     {
         product: "Wood Floors",
@@ -120,7 +125,7 @@ let specialProducts = [
         description: "Lorem ipsum dolor sit amet",
         score: 4.2,
         poster: "https://i.im.ge/2022/09/14/1TG1qL.Home11.jpg",
-        cart: "https://i.im.ge/2022/09/09/OHfvqa.Frame-5.png"
+        cart: "https://cdn.lordicon.com/aoggitwj.json"
     },
 ]
 
@@ -140,7 +145,12 @@ function crearCardSpecial(special)
                                 </div>
                                 <div class="right-card">
                                     <h5>${special.price}</h5>
-                                    <img class="cart-card" src="${special.cart}">
+                                    <lord-icon class="icon"
+                                        src=${special.cart}
+                                        trigger="hover"
+                                        colors="primary:#ff902b"
+                                        style="width:32px;height:32px">
+                                    </lord-icon>        
                                 </div>             
                             </div>
                         </div>`;
@@ -181,4 +191,19 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+}
+
+let slideIndex2 = 0;
+carousel();
+
+function carousel() {
+  let i;
+  let x = document.getElementsByClassName("sl-one");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex2++;
+  if (slideIndex2 > x.length) {slideIndex2 = 1}
+  x[slideIndex2-1].style.display = "block";
+  setTimeout(carousel, 2400); // Change image every 2 seconds
 }

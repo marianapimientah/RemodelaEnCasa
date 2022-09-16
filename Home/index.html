@@ -17,17 +17,27 @@
                 <img src="./assets/icons/Logo.png" alt="logo-remodela-en-casa">
             </div>
             <ul class="nav-items">
-                <li><a href="">About Us</a></li>
-                <li><a href="">Our Products</a></li>
-                <li><a href="">Delivery</a></li>
+                <li><a href="#section-4">About Us</a></li>
+                <li><a href="#section-5">Our Products</a></li>
+                <li><a href="#delivery">Delivery</a></li>
             </ul>    
             <div class="search-header">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input id="search-in" type="text" placeholder="Search">
             </div>
             <div class="cart-login">
-                <i><img src="./assets/icons/Cart.png"></i>
-                <i><img src="./assets/icons/Login.png"></i>
+                <lord-icon class="icon-sc-1"
+                    src="https://cdn.lordicon.com/slkvcfos.json"
+                    trigger="hover"
+                    colors="primary:#34170B,secondary:#34170B"
+                    style="width:30px;height:30px">
+                </lord-icon>
+                <lord-icon class="icon-sc-1"
+                    src="https://cdn.lordicon.com/dxjqoygy.json"
+                    trigger="hover"
+                    colors="primary:#34170B,secondary:#34170B"
+                    style="width:30px;height:30px">
+                </lord-icon>
             </div>
             <span class="btn-menu">
                 <i class="fas fa-bars"></i>
@@ -41,7 +51,14 @@
                 <p>Decorate your home as you have always dreamed</p>
                 <div class="btns-left">
                     <div class="btn-buy">
-                        <button id="buy-now" >Buy now<img src="./assets/icons/Cart_Button.png"></button>
+                        <button id="buy-now" >Buy now                                    
+                                <lord-icon class="icon-sc-2"
+                                src= "https://cdn.lordicon.com/gtcqrwnh.json"
+                                trigger="hover"
+                                colors="primary:#ff902b"
+                                style="width:22px;height:22px">
+                        </lord-icon>        
+                        </button>
                     </div>
                     <div>
                         <button id="read-more">Read more</button>
@@ -200,41 +217,41 @@
         <section id="section-7">
             <img src="./assets/img/Home12.jpg" alt="Remodel persons">
             <h2>Subscribe to get 50% discount price</h2>
-            <input id="seven-in" type="text" placeholder="Email address">
+            <input id="seven-in" type="email" placeholder="Email address">
             <button id="btn-seven">Buy now</button>
         </section>
     </main>
-    <footer>
+    <footer id="footer-rc">
         <div class="one">
             <img src="./assets/icons/Logo.png" alt="Logo Remodela en Casa">
             <p>Av. 8G # 158 - 04, 1st Floor</p>
             <p>Bogotá, Colombia</p>
             <div class="social">
-                <img src="./assets/icons/Facebook.png" alt="Logo de Facebook">
-                <img src="./assets/icons/YouTube.png" alt="Logo de YouTube">
-                <img src="./assets/icons/Instagram.png" alt="Logo de Instagram">
+                <ion-icon class="icon-foo" name="logo-facebook" style="width:25px;height:25px"></ion-icon>
+                <ion-icon class="icon-foo" name="logo-youtube" style="width:25px;height:25px"></ion-icon>
+                <ion-icon class="icon-foo" name="mail" style="width:25px;height:25px"></ion-icon>
             </div>
         </div>
         <div class="cont-two">
             <div class="two">
                 <h4>Company</h4>
-                <h5>About us</h5>
-                <h5>Products</h5>
-                <h5>Pricing</h5>
-                <h5>Discounts</h5>
+                <li><a href="#section-4">About us</a></li>
+                <li><a href="#section-5">Products</a></li>
+                <li><a href="#section-5">Pricing</a></li>
+                <li><a href="#section-3">Discounts</a></li>
             </div>
             <div class="two">
                 <h4>Information</h4>
-                <h5>Contact us</h5>
-                <h5>Delivery</h5>
-                <h5>Community</h5>
-                <h5>Privacy Policy</h5>
+                <li><a href="">Contact us</a></li>
+                <li><a href="#delivery">Delivery</a></li>
+                <li><a href="#section-6">Community</a></li>
+                <li><a href="">Privacy Policy</a></li>
             </div>    
         </div>
         <div class="three">
             <div class="in-btn">
                 <input type="text" placeholder="Update in your inbox..." id="input-footer">
-                <button id="go-footer">Go</button>    
+                <button type="button" id="go-footer">Go</button>    
             </div>
             <div class="four">
                 <p>© 2022, All Rights Reserved</p>
@@ -242,5 +259,8 @@
         </div>
     </footer>
     <script src="./scripts/main.js"></script>
+    <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    
 </body>
 </html>
