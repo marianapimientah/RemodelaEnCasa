@@ -796,7 +796,7 @@ input::placeholder {
         box-shadow: none;
     }
     .search-header i{
-        top: 8px;
+        top: 7px;
     }
     .cart-login{
         position: fixed;
@@ -809,8 +809,8 @@ input::placeholder {
         margin: 40px 0 0 0;
         z-index: 2;
     }
-    .cart-login img{
-        width: 40px;
+    .icon-sc-1{
+        background-color: white;
     }
     /*-------------------------MAIN TOP--------------------------*/
     .right-one{
@@ -991,8 +991,8 @@ input::placeholder {
         margin: 40px 0 0 0;
         z-index: 2;
     }
-    .cart-login img{
-        width: 40px;
+    .icon-sc-1{
+        background-color: white;
     }
     /*-----------------------------------------------MAIN TOP--------------------------------------------------------*/
     .right-one{
