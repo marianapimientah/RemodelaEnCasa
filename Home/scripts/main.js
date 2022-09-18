@@ -63,7 +63,7 @@ function crearCard(popular)
                             src=${popular.cart}
                             trigger="hover"
                             colors="primary:#ff902b"
-                            style="width:32px;height:32px">
+                            style="width:36px;height:36px">
                         </lord-icon>        
                     </div>             
                 </div>`;
@@ -149,7 +149,7 @@ function crearCardSpecial(special)
                                         src=${special.cart}
                                         trigger="hover"
                                         colors="primary:#ff902b"
-                                        style="width:32px;height:32px">
+                                        style="width:36px;height:36px">
                                     </lord-icon>        
                                 </div>             
                             </div>

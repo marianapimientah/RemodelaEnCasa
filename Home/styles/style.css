@@ -74,6 +74,7 @@ body button{
     border-radius: 50px;
     background-color: #ffe8d3;
     border: solid 1px rgba(78, 40, 17, 0.2);
+    padding: 2px;
 }
 .icon-sc-1:hover{
     border-radius: 50px;
@@ -191,7 +192,7 @@ body button{
     color: #34170B;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
-    font-weight: 550;
+    font-weight: 700;
     background-clip: padding-box;
     border: 6px solid rgba(255, 255, 255, 0.6);
     border-radius: 50px;
@@ -211,7 +212,7 @@ body button{
     color: #34170B;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
-    font-weight: 550;
+    font-weight: 700;
     background-clip: padding-box;
     border: 6px solid rgba(255, 255, 255, 0.6);
     border-radius: 50px;
@@ -483,11 +484,13 @@ body button{
 }
 .icon{
     margin-top: 8px;
+    padding: 4px 4px;
     color: #FF902B;
     cursor: pointer;
 }
 .icon:hover{
     border-radius: 150px;
+    padding: 4px 4px;
     background-color: #fde9cc;
 }
 
