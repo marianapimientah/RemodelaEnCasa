@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Login</title>
+    <title>Sign Up</title>
 </head>
 <body>
     <a href="../Home/index.html" target="_blank"><img id="logo" src="./assets/Logo.png" alt="Logo"></a>
@@ -15,32 +15,36 @@
             <div class="title">
                 <h1>
                     <lord-icon
-                    src="https://cdn.lordicon.com/dklbhvrt.json"
+                    src="https://cdn.lordicon.com/aslgozpd.json"
                     trigger="hover"
                     colors="primary:#FF914B"
                     style="width:50px;height:50px">
                     </lord-icon>
-                    Login
+                    Register
                 </h1>
             </div>
 			<div class="inputBox">
 				<input id="username" type="text" required="required">
-				<span>Username</span>
+				<span>Username (email)</span>
 				<i></i>
 			</div>
 			<div class="inputBox">
 				<input id="password" type="password" required="required">
-				<span>Password</span>
+				<span>New Password</span>
+				<i></i>
+			</div>
+            <div class="inputBox">
+				<input id="password" type="password" required="required">
+				<span>Confirm Password</span>
 				<i></i>
 			</div>
 			<div class="links">
-				<a href="#">Forgot Password ?</a>
-				<a href="../Register/index.html">Sign up</a>
+				<a href="../Login/Index.html">Login</a>
 			</div>
-			<input type="submit" value="Login">
+			<input type="submit" value="Create Account">
         </form>
     </main>
-    <script src="./scripts/verifyLogin.js"></script>
+    <script src="./scripts/verifyRegister.js"></script>
     <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
 </body>
 </html>
