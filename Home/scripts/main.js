@@ -59,12 +59,14 @@ function crearCard(popular)
                     </div>
                     <div class="right-card">
                         <h5>${popular.price}</h5>
-                        <lord-icon class="icon"
+                        <a href="../../Cart/Index.html" target="_blank">
+                            <lord-icon class="icon"
                             src=${popular.cart}
                             trigger="hover"
                             colors="primary:#ff902b"
                             style="width:36px;height:36px">
-                        </lord-icon>        
+                        </a>
+                            </lord-icon>        
                     </div>             
                 </div>`;
     contenedor.innerHTML += card;
@@ -145,12 +147,14 @@ function crearCardSpecial(special)
                                 </div>
                                 <div class="right-card">
                                     <h5>${special.price}</h5>
-                                    <lord-icon class="icon"
-                                        src=${special.cart}
-                                        trigger="hover"
-                                        colors="primary:#ff902b"
-                                        style="width:36px;height:36px">
-                                    </lord-icon>        
+                                    <a href="../../Cart/Index.html" target="_blank">
+                                        <lord-icon class="icon"
+                                            src=${special.cart}
+                                            trigger="hover"
+                                            colors="primary:#ff902b"
+                                            style="width:36px;height:36px">
+                                    </a>
+                                        </lord-icon>        
                                 </div>             
                             </div>
                         </div>`;
